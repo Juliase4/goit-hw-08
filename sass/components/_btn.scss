@@ -1,0 +1,65 @@
+.hero-btn,
+.modal-btn {
+    font-family: inherit;
+    width: 200px;
+    @include font(16px, null, 1.9, 0.06em);
+    align-items: center;
+    cursor: pointer;
+    border: transparent;
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    color: $second-btn-color;
+    background-color: $accent-color;
+    transition: background-color var(--typical-effect-time) var(--typical-transition-timing-function);
+
+    &:hover, &:focus {
+            color: $second-btn-color;
+            background-color: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+.menu-btn {
+    font-family: inherit;
+    @include font(16px, 500, 1.6);
+    padding: 6px 22px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button.menu-btn {
+    display: inline;
+    cursor: pointer;
+    border: none;
+    transition: color var(--typical-effect-time) var(--typical-transition-timing-function),
+        background-color var(--typical-effect-time) var(--typical-transition-timing-function),
+        box-shadow var(--typical-effect-time) var(--typical-transition-timing-function);
+}
+
+.footer-btn {
+    @include font(16px, 700, 1.8, 0.06em);
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    color: $second-color;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    display: flex;
+    padding: 10px 28px;
+    margin-left: 12px;
+    transition: background-color var(--typical-effect-time) var(--typical-transition-timing-function);
+
+    &:hover, &:focus {
+            background-color: #188CE8;
+        }
+}
+
+.footer-btn-text {
+    margin-right: 10px;
+}

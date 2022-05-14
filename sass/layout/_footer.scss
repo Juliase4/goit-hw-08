@@ -1,0 +1,85 @@
+.footer {
+    background: $footer-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+            display: flex;
+            align-items: baseline;
+        }
+}
+
+.footer-soc {
+    margin-left: 70px;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.contact-list {
+    .contact-list__link {
+        @include font(14px, null, 1.7);
+        font-family: inherit;
+        font-style: normal;
+
+        color: #FFFFFF;
+    }
+
+    .contact-list__mail, .contact-list__tel {
+        @include font(14px, null, 1.7);
+        font-family: inherit;
+        font-style: normal;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .contact-list__item {
+        margin-bottom: 9px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.soc-list {
+    .soc-list__item+.soc-list__item {
+        margin-left: 10px;
+    }
+
+    .soc-list__link--dark {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $second-color;
+        transition: background-color var(--typical-effect-time) var(--typical-transition-timing-function);
+    }
+
+    &__link--dark:hover, &__link--dark:focus, &__link--dark:active {
+        background-color: $accent-color;
+    }
+}
+
+.newsletter {
+    margin-left: 93px;
+}
+
+.online-field {
+    display: flex;
+}
+
+.online-input {
+    @include font(16px, null);
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    color: #FFFFFF;
+    padding-left: 16px;
+}

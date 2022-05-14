@@ -1,0 +1,32 @@
+.soc-list {
+    display: flex;
+    justify-content: center;
+
+    .soc-list__link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+}
+
+.soc-list--left {
+    .soc-list--left + .soc-list--left {
+            margin-left: 10px;
+        }
+}
+
+.soc-list__link--light {
+    background-color: $second-btn-color;
+    fill: #AFB1B8;
+    transition: background-color var(--typical-effect-time) var(--typical-transition-timing-function),
+        fill var(--typical-effect-time) var(--typical-transition-timing-function);
+    
+    &:hover, &:focus, &:active {
+            background-color: $accent-color;
+            fill: #FFFFFF;
+        }
+}
+

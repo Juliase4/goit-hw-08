@@ -1,0 +1,17 @@
+.logo,
+.logo-secondary {
+  font-family: $secondary-font-family;
+  font-style: normal;
+  @include font(26px, null);
+
+  color: #2196f3;
+}
+
+.logo-footer {
+  font-family: $secondary-font-family;
+  font-style: normal;
+  @include font(26px, null, 1.2);
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}

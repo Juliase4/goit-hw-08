@@ -1,82 +1,86 @@
 .menu-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--typical-margin);
+  display: flex;
+  justify-content: center;
+  margin-bottom: $typical-margin;
 
-& :hover, & :focus, & :active {
-        display: inline;
-        cursor: pointer;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
+  & :hover,
+  & :focus,
+  & :active {
+    display: inline;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 
-        color: $second-btn-color;
-        background-color: $accent-color;
-    }
+    color: $second-btn-color;
+    background-color: $accent-color;
+  }
 
-.menu-nav-item:last-child {
+  .menu-nav-item:last-child {
     margin-right: 0;
-}
+  }
 }
 
 .menu-nav-item {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 /* -----Категория все----- */
 /* filters-list */
 .filters-list {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
 }
 
 /* filters-link */
 .filters-link {
-    display: block;
-    transition: box-shadow var(--typical-effect-time) var(--typical-transition-timing-function);
+  display: block;
+  transition: box-shadow $typical-effect-time
+    $typical-transition-timing-function;
 
-    &:hover, &:focus {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .filters-cover-wrap {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .filters-item-description {
-    @include font(18px, null, 1.5);
-    padding: 63px 24px;
-    height: 100%;
+  @include font(18px, null, 1.5);
+  padding: 63px 24px;
+  height: 100%;
 
-    color: $second-color;
-    background: rgba(33, 150, 243, 0.9);
+  color: $second-color;
+  background: rgba(33, 150, 243, 0.9);
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform var(--typical-effect-time) var(--typical-transition-timing-function);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform $typical-effect-time $typical-transition-timing-function;
 }
 
 .filters-link:hover .filters-item-description,
 .filters-link:focus .filters-item-description {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* filters-name */
 .filters-name {
-    padding: 20px 24px;
-    border-right: 1px solid rgba(238, 238, 238, 1);
-    border-left: 1px solid rgba(238, 238, 238, 1);
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
 /* filters-text */
 .filters-text {
-    @include font(16px, null, 1.8);
-    color: #757575;
+  @include font(16px, null, 1.8);
+  color: #757575;
 }

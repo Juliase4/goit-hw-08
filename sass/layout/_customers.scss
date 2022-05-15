@@ -19,9 +19,9 @@
   box-sizing: border-box;
   border-radius: 4px;
   fill: #afb1b8;
-  transition: border-color var(--typical-effect-time)
-      var(--typical-transition-timing-function),
-    fill var(--typical-effect-time) var(--typical-transition-timing-function);
+  transition: border-color $typical-effect-time
+      $typical-transition-timing-function,
+    fill $typical-effect-time $typical-transition-timing-function;
 
   &:hover,
   &:focus,

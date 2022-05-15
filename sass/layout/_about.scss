@@ -1,9 +1,12 @@
 /* about */
 .about {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
   padding-top: 0;
 }
 
-/* about-list */
 .about-list {
   display: flex;
   flex-wrap: wrap;

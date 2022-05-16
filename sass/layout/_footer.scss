@@ -43,24 +43,6 @@
   }
 }
 
-.soc-list {
-  .soc-list__item + .soc-list__item {
-    margin-left: 10px;
-  }
-
-  .soc-list__link--dark {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: $second-color;
-    transition: background-color $typical-effect-time
-      $typical-transition-timing-function;
-  }
-
-  &__link--dark:hover,
-  &__link--dark:focus,
-  &__link--dark:active {
-    background-color: $accent-color;
-  }
-}
 
 .newsletter {
   margin-left: 93px;

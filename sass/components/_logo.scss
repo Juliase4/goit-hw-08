@@ -10,8 +10,11 @@
 .logo-footer {
   font-family: $secondary-font-family;
   font-style: normal;
-  @include font(26px, null, 1.2);
   margin-bottom: 20px;
-
   color: #ffffff;
+  @include font(24px, 700, 1.16);
+  
+  @include desktop {
+    @include font(26px, 700, 1.2);
+  }
 }

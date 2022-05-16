@@ -35,14 +35,17 @@
   }
 
   .contact-list__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @include desktop {
+      margin-bottom: 9px;
+    }
+
   }
 
   &__item:last-child {
     margin-bottom: 0;
   }
 }
-
 
 .newsletter {
   margin-left: 93px;

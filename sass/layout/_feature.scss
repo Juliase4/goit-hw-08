@@ -8,10 +8,10 @@
 }
 
 .feature-list__item {
-  margin-bottom: 30px;
+  margin-bottom: $typical-margin;
 
   @include tablet {
-    margin-right: 30px;
+    margin-right: $typical-margin;
   }
 
   @include desktop {
@@ -24,7 +24,7 @@
   margin-bottom: 0;
 
   @include tablet {
-    margin-right: 30px;
+    margin-right: $typical-margin;
   }
 
   @include desktop {
@@ -52,7 +52,7 @@
 
 .feature-list__title {
   @include font(14px, 700, 1.1);
-  margin-top: 30px;
+  margin-top: $typical-margin;
   margin-bottom: 10px;
   text-align: center;
 

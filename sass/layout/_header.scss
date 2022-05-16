@@ -26,7 +26,7 @@
     padding-bottom: 32px;
   }
   .header-list__item {
-    margin-right: $typical-margin;
+    margin-right: $desktop-margin;
   }
   .header-list__item:last-child {
     margin-right: 0;
@@ -64,7 +64,7 @@
   display: flex;
   margin-left: auto;
   .connect__item + .connect__item {
-    margin-left: $typical-margin;
+    margin-left: $desktop-margin;
   }
 
   .connect__link {

@@ -42,7 +42,7 @@
 .hero-title {
   @include font(20px, 900, 1.61, 0.06em);
   max-width: 360px;
-  margin-bottom: 30px;
+  margin-bottom: $typical-margin;
   margin-left: auto;
   margin-right: auto;
 

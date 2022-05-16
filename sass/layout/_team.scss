@@ -4,7 +4,7 @@
 
 .team-title {
   text-align: center;
-  margin-bottom: $typical-margin;
+  margin-bottom: $desktop-margin;
   @include desktop {
     @include font(36px, 700, 1.16);
   }
@@ -23,12 +23,12 @@
   }
 
   .team-list__item {
-    margin-bottom: 30px;
+    margin-bottom: $typical-margin;
     text-align: center;
     background: #ffffff;
 
     @include tablet {
-      margin-right: 30px;
+      margin-right: $typical-margin;
     }
 
     @include desktop {
@@ -41,7 +41,7 @@
       margin-right: 0;
     }
     @include desktop {
-      margin-right: 30px;
+      margin-right: $typical-margin;
     }
   }
 

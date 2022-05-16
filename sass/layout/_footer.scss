@@ -3,13 +3,35 @@
   padding-top: $typical-padding;
   padding-bottom: $typical-padding;
   .container {
+    text-align: center;
+    @include tablet {
     display: flex;
     align-items: baseline;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+}
+
+.footer-box {
+  margin-bottom: 60px;
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+  }
+  @include desktop {
+    margin-bottom: 0;
   }
 }
 
 .footer-soc {
-  margin-left: 70px;
+  @include tablet {
+    margin-left: 165px;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
 }
 
 .address {
@@ -17,6 +39,10 @@
 }
 
 .contact-list {
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
   .contact-list__link {
     @include font(14px, null, 1.7);
     font-family: inherit;
@@ -39,7 +65,6 @@
     @include desktop {
       margin-bottom: 9px;
     }
-
   }
 
   &__item:last-child {
@@ -48,21 +73,23 @@
 }
 
 .newsletter {
+  @include desktop {
   margin-left: 93px;
+  }
 }
 
 .online-field {
+  @include desktop {
   display: flex;
+}
 }
 
 .online-input {
-  @include font(16px, null);
-  display: flex;
-  align-items: center;
-
-  color: rgba(255, 255, 255, 0.6);
-  width: 358px;
+  max-width: 450px;
   height: 50px;
+  @include font(16px, null);
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -70,5 +97,12 @@
   border-radius: 4px;
   outline: none;
   color: #ffffff;
-  padding-left: 16px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    display: flex;
+    padding-left: 16px;
+    margin-bottom: 0;
+    width: 358px;
+  }
 }

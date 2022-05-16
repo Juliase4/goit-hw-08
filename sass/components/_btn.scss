@@ -44,19 +44,22 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-
   color: $second-color;
   width: 200px;
   height: 50px;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: transparent;
   display: flex;
+  border: transparent;
   padding: 10px 28px;
-  margin-left: 12px;
   transition: background-color $typical-effect-time
     $typical-transition-timing-function;
+  margin: auto;
+  
+  @include desktop {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

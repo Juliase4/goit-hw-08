@@ -2,7 +2,7 @@
 .modal-btn {
   font-family: inherit;
   width: 200px;
-  @include font(16px, null, 1.9, 0.06em);
+  @include font(16px, 700, 1.9, 0.06em);
   align-items: center;
   cursor: pointer;
   border: transparent;

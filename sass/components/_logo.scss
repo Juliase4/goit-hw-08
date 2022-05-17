@@ -2,9 +2,11 @@
 .logo-secondary {
   font-family: $secondary-font-family;
   font-style: normal;
-  @include font(26px, null);
-
   color: #2196f3;
+  @include font(24px, 700, 1.16);
+  @include desktop {
+    @include font(26px, 700);
+  }
 }
 
 .logo-footer {
@@ -13,7 +15,7 @@
   margin-bottom: 20px;
   color: #ffffff;
   @include font(24px, 700, 1.16);
-  
+
   @include desktop {
     @include font(26px, 700, 1.2);
   }

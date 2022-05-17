@@ -491,6 +491,7 @@ body {
   font-family: inherit;
   width: 200px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
   align-items: center;
@@ -639,10 +640,20 @@ body {
 .logo-secondary {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   color: #2196f3;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo,
+.logo-secondary {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo-footer {
@@ -724,10 +735,12 @@ body {
 }
 
 /* navigation */
-.header .container,
+@media screen and (min-width: 768px) {
+  .header .container,
 .navigation {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Лого */
@@ -737,19 +750,30 @@ body {
 
 /* header-list */
 .header-list {
-  display: flex;
-  margin-left: 93px;
-  overflow: hidden;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    margin-left: 93px;
+    overflow: hidden;
+  }
 }
 .header-list .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
-.header-list .header-list__item {
+@media screen and (min-width: 768px) {
+  .header-list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header-list__item {
   margin-right: 50px;
 }
-.header-list .header-list__item:last-child {
+
+.header-list__item:last-child {
   margin-right: 0;
 }
 
@@ -780,13 +804,19 @@ body {
 
 /* connect */
 .connect {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: flex;
+    margin-left: auto;
+  }
 }
 .connect .connect__item + .connect__item {
   margin-left: 50px;
 }
-.connect .connect__link {
+
+.connect__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -806,6 +836,45 @@ body {
 /* connect__icon */
 .connect__icon {
   margin-right: 10px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  padding: 48px 40px;
+}
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.menu-open-btn,
+.menu-close-btn {
+  background: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn,
+.menu-close-btn {
+    display: none;
+  }
+}
+
+.icon-burger,
+.icon-cross {
+  fill: #212121;
 }
 
 .hero {

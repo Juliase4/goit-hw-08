@@ -9,6 +9,7 @@
   @include tablet {
     display: flex;
     align-items: center;
+    flex-grow: 1;
   }
 }
 
@@ -67,10 +68,29 @@
   display: none;
   @include tablet {
     display: flex;
-    margin-left: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  @include desktop {
+    margin-left: auto;
+    flex-direction: initial;
+  }
+
+  .connect__item {
+    @include tablet {
+      margin-top: 10px;
+    }
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+
   .connect__item + .connect__item {
-    margin-left: $desktop-margin;
+    @include desktop {
+      margin-left: $desktop-margin;
+    }
   }
 }
 
@@ -81,6 +101,10 @@
   fill: #757575;
   color: #757575;
   transition: color $typical-effect-time $typical-transition-timing-function;
+  @include font(12px, 500, 1.16, 0.02em);
+  @include desktop {
+    @include font(14px, 500, 1.14, 0.02em);
+  }
 }
 
 .connect__link :hover,

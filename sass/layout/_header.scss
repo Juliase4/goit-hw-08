@@ -12,11 +12,6 @@
   }
 }
 
-/* Лого */
-.logo-header {
-  color: #212121;
-}
-
 /* header-list */
 .header-list {
   display: none;
@@ -99,38 +94,4 @@
 /* connect__icon */
 .connect__icon {
   margin-right: 10px;
-}
-
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background: $second-color;
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-  padding: 48px 40px;
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    overflow: auto;
-  }
-  @include tablet {
-    display: none;
-  }
-}
-
-.menu-open-btn,
-.menu-close-btn {
-  background: transparent;
-  border: none;
-  @include tablet {
-    display: none;
-  }
-}
-
-.icon-burger,
-.icon-cross {
-  fill: $first-btn-color;
 }

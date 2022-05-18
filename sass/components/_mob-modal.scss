@@ -1,0 +1,35 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background: $second-color;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  padding: 48px 40px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-open-btn,
+.menu-close-btn {
+  background: transparent;
+  border: none;
+  @include tablet {
+    display: none;
+  }
+}
+
+.icon-burger,
+.icon-cross {
+  fill: $first-btn-color;
+}
+
+.mob-box {
+  padding: 48px 83px 48px 40px;
+}

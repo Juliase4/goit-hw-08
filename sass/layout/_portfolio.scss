@@ -1,7 +1,16 @@
 .menu-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: $desktop-margin;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: $desktop-margin;
+  }
 
   & :hover,
   & :focus,
@@ -28,9 +37,24 @@
 /* -----Категория все----- */
 /* filters-list */
 .filters-list {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 30px;
+  @include tablet {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+  @include desktop {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.filters-item {
+  margin-bottom: $typical-margin;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 /* filters-link */
@@ -38,6 +62,12 @@
   display: block;
   transition: box-shadow $typical-effect-time
     $typical-transition-timing-function;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
   &:hover,
   &:focus {
@@ -52,18 +82,17 @@
 }
 
 .filters-item-description {
+  margin-bottom: $typical-margin;
   @include font(18px, null, 1.5);
-  padding: 63px 24px;
   height: 100%;
-
   color: $second-color;
   background: rgba(33, 150, 243, 0.9);
-
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(100%);
   transition: transform $typical-effect-time $typical-transition-timing-function;
+  padding: 63px 24px;
 }
 
 .filters-link:hover .filters-item-description,
@@ -73,6 +102,7 @@
 
 /* filters-name */
 .filters-name {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);

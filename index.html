@@ -169,6 +169,7 @@
           <ul class="about-list list">
             <li class="about-list__item">
               <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Написание кода на компьютере"
                 width="370"
@@ -178,6 +179,7 @@
             </li>
             <li class="about-list__item">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Разработка мобильных приложений"
                 width="370"
@@ -187,6 +189,7 @@
             </li>
             <li class="about-list__item">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Создание дизайна"
                 width="370"
@@ -205,12 +208,40 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <div class="team-list__card">
-                <img
-                  src="./images/img-igor.jpg"
-                  alt="Фото Product Designer"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-igor.jpg         1x,
+                      ./images/team/igor-des-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/igor-tab.jpg    1x,
+                      ./images/team/igor-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/igor-mob.jpg    1x,
+                      ./images/team/igor-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    srcset="
+                      ./images/team/igor-mob.jpg    1x,
+                      ./images/team/igor-mob-2x.jpg 2x
+                    "
+                    src="./images/img-igor.jpg"
+                    alt="Фото Product Designer"
+                    width="270"
+                    height="260"
+                  />
+                </picture>
+
                 <div class="team-list__name">
                   <h3 class="team-list__pre-title title--dark">
                     Игорь Демьяненко
@@ -271,12 +302,40 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__card">
-                <img
-                  src="./images/img-olga.jpg"
-                  alt="Фото фронтэнд-разработчика"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-olga.jpg         1x,
+                      ./images/team/olga-des-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga-tab.jpg    1x,
+                      ./images/team/olga-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga-mob.jpg    1x,
+                      ./images/team/olga-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    srcset="
+                      ./images/team/olga-mob.jpg    1x,
+                      ./images/team/olga-mob-2x.jpg 2x
+                    "
+                    src="./images/img-olga.jpg"
+                    alt="Фото фронтэнд-разработчика"
+                    width="270"
+                    height="260"
+                  />
+                </picture>
+
                 <div class="team-list__name">
                   <h3 class="team-list__pre-title title--dark">Ольга Репина</h3>
                   <p class="team-list__text">Frontend Developer</p>
@@ -335,12 +394,40 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__card">
-                <img
-                  src="./images/img-nikolay.jpg"
-                  alt="Фото маркетолога"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-nikolay.jpg         1x,
+                      ./images/team/nikolay-des-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay-tab.jpg    1x,
+                      ./images/team/nikolay-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay-mob.jpg    1x,
+                      ./images/team/nikolay-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    srcset="
+                      ./images/team/nikolay-mob.jpg    1x,
+                      ./images/team/nikolay-mob-2x.jpg 2x
+                    "
+                    src="./images/img-nikolay.jpg"
+                    alt="Фото маркетолога"
+                    width="270"
+                    height="260"
+                  />
+                </picture>
+
                 <div class="team-list__name">
                   <h3 class="team-list__pre-title title--dark">
                     Николай Тарасов
@@ -401,12 +488,40 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__card">
-                <img
-                  src="./images/img-mihail.jpg"
-                  alt="Фото дизайнера пользовательского интерфейса"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-mihail.jpg         1x,
+                      ./images/team/mihail-des-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mihail-tab.jpg    1x,
+                      ./images/team/mihail-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mihail-mob.jpg    1x,
+                      ./images/team/mihail-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    srcset="
+                      ./images/team/mihail-mob.jpg    1x,
+                      ./images/team/mihail-mob-2x.jpg 2x
+                    "
+                    src="./images/img-mihail.jpg"
+                    alt="Фото дизайнера пользовательского интерфейса"
+                    width="270"
+                    height="260"
+                  />
+                </picture>
+
                 <div class="team-list__name">
                   <h3 class="team-list__pre-title title--dark">
                     Михаил Ермаков

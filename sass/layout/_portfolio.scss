@@ -32,6 +32,12 @@
 
 .menu-nav-item {
   margin-right: 8px;
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
 }
 
 /* -----Категория все----- */
@@ -83,7 +89,7 @@
 
 .filters-item-description {
   margin-bottom: $typical-margin;
-  @include font(18px, null, 1.5);
+  @include font(14px, null, 1.5);
   height: 100%;
   color: $second-color;
   background: rgba(33, 150, 243, 0.9);
@@ -93,6 +99,9 @@
   transform: translateY(100%);
   transition: transform $typical-effect-time $typical-transition-timing-function;
   padding: 63px 24px;
+  @include mobile {
+    @include font(18px, null, 1.5);
+  }
 }
 
 .filters-link:hover .filters-item-description,

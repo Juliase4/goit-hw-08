@@ -26,18 +26,75 @@
           <a href="./index.html" class="logo link">
             Web<span class="logo-header">Studio</span>
           </a>
-          <button type="button" class="menu-open-btn">
+          <button
+            type="button"
+            class="menu-mob-btn"
+            aria-expanded="false"
+            aria-controls="mob-menu-container"
+            data-menu-button
+          >
             <svg
-              width="24"
-              height="16"
+              width="40"
+              height="40"
               aria-label="Переключатель мобильного меню"
             >
               <use
+                class="icon-cross"
+                href="./images/icons/symbol-defs.svg#icon-close_mob"
+              ></use>
+              <use
                 class="icon-burger"
-                href="./images/icons/symbol-defs.svg#icon-burger_menu"
+                href="./images/icons/symbol-defs.svg#icon-burger"
               ></use>
             </svg>
           </button>
+          <div class="mob-menu-container" id="mob-menu-container" data-menu>
+            <ul class="mob-menu-list list nav">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-menu-link current active link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="mob-menu-link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mob-menu-connect list">
+              <li class="mob-menu-connect-item">
+                <a
+                  href="tel:+380961111111"
+                  class="mob-menu-connect-link mob-menu-connect-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-connect-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-connect-link mob-menu-connect-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc-list list">
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link">Instagram</a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link">Twitter</a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link">Facebook</a>
+              </li>
+              <li class="mob-menu-soc-item">
+                <a href="" class="mob-menu-soc-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
           <ul class="header-list list nav">
             <li class="header-list__item">
               <a

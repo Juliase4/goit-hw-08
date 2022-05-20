@@ -29,10 +29,12 @@
     background: #ffffff;
 
     @include tablet {
+      max-width: 354px;
       margin-right: $typical-margin;
     }
 
     @include desktop {
+      max-width: 270px;
       margin-bottom: 0;
     }
   }

@@ -146,10 +146,13 @@
 
 /* modal-check-text */
 .modal-check-text {
-  @include font(14px, null, 1.7);
+  @include font(12px, null, 1.16);
   display: flex;
   align-items: center;
   color: #757575;
+  @include desktop {
+    @include font(14px, null, 1.7);
+  }
 }
 
 .modal-check-text::before {

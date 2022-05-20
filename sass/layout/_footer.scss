@@ -5,10 +5,10 @@
   .container {
     text-align: center;
     @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-evenly;
     }
     @include desktop {
       text-align: left;
@@ -78,14 +78,14 @@
 
 .newsletter {
   @include desktop {
-  margin-left: 93px;
+    margin-left: 93px;
   }
 }
 
 .online-field {
   @include desktop {
-  display: flex;
-}
+    display: flex;
+  }
 }
 
 .online-input {
@@ -101,6 +101,7 @@
   border-radius: 4px;
   outline: none;
   color: #ffffff;
+  padding-left: 16px;
   margin-bottom: 30px;
 
   @include tablet {
@@ -109,7 +110,6 @@
 
   @include desktop {
     display: flex;
-    padding-left: 16px;
     margin-bottom: 0;
     width: 358px;
   }

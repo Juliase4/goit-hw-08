@@ -1270,6 +1270,7 @@ body {
   }
 }
 .team-list .team-list__item {
+  max-width: 450px;
   margin-bottom: 30px;
   text-align: center;
   background: #ffffff;

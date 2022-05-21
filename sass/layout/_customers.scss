@@ -17,7 +17,6 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -30px;
-  margin-bottom: -30px;
 
   @include desktop {
     margin-bottom: 0;
@@ -32,6 +31,42 @@
 
   @include tablet {
     width: calc(100% / 3 - 30px);
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.customers__item:nth-child(2n) {
+  margin-right: 0;
+  @include tablet {
+    margin-right: 30px;
+  }
+}
+
+.customers__item:last-child {
+  margin-bottom: 0;
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.customers__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.customers__item:nth-last-child(-n + 3) {
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.customers__item:nth-child(3) {
+  @include tablet {
+    margin-right: 0;
+  }
+  @include desktop {
+    margin-right: 30px;
   }
 }
 

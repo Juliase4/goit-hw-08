@@ -85,7 +85,10 @@
 
 .mob-menu-connect-tel {
   color: $accent-color;
-  @include font(34px, 500, 1.17, 0.02em);
+  @include font(26px, 500, 1.17, 0.02em);
+  @include mobile {
+    @include font(34px, 500, 1.17, 0.02em);
+  }
 }
 
 .mob-menu-connect-mail {
@@ -115,6 +118,9 @@
 
 .mob-menu-soc-link {
   color: $accent-color;
-  @include font(18px, 500, 1.2, 0.02em);
   text-decoration: none;
+  @include font(12px, 500, 1.2, 0.02em);
+  @include mobile {
+    @include font(18px, 500, 1.2, 0.02em);
+  }
 }

@@ -100,9 +100,16 @@
   left: 0;
   transform: translateY(100%);
   transition: transform $typical-effect-time $typical-transition-timing-function;
-  padding: 63px 24px;
+  padding: 40px 24px;
   @include mobile {
     @include font(18px, null, 1.5);
+    padding: 77px 24px;
+  }
+  @include tablet {
+    padding: 49px 24px 77px 24px;
+  }
+  @include desktop {
+    padding: 63px 24px;
   }
 }
 
